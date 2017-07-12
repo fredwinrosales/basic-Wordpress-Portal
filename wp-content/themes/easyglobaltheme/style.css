@@ -9,3 +9,15 @@
     License URI: http://www.gnu.org/licenses/gpl-2.0.html
     Tags: bootstrap, portal, slider
 */
+
+html,
+body{
+    margin: 0;
+    color: #333;
+    background: #eee;
+    font: sans-serif;
+}
+
+body{
+    padding: 20px;
+}
