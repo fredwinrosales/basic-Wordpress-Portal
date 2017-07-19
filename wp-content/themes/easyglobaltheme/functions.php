@@ -36,3 +36,27 @@ function easyglobaltheme_theme_setup(){
 }
 
 add_action('init', 'easyglobaltheme_theme_setup');
+
+/*
+  ====================================
+  Sidebar Function
+  ====================================
+*/
+function easyglobaltheme_widget_setup()
+{
+
+    register_sidebar(
+        array(
+            'name' => 'Sidebar-1',
+            'id' => 'sidebar-1',
+            'class' => 'custom',
+            'description' => '',
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+            'after_widget' => '</aside>',
+            'before_title' => '<h1 class="widget-title">',
+            'after_title' => '</h1>',
+        )
+    );
+}
+
+add_action('init', 'easyglobaltheme_widget_setup');
